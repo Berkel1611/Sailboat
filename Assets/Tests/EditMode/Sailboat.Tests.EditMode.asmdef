@@ -1,0 +1,16 @@
+{
+    "name": "Sailboat.Tests.EditMode",
+    "rootNamespace": "",
+    "references": [
+        "GUID:22a7a6aee4cecc345b32853cd0819a3a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
