@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6995348d3b5be4e9210b75f6cfc820, type: 3}
+  m_Name: SailboatConfig
+  m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Config.SailboatConfig
+  _mass: 5000
+  _inertia: 60000
+  _sailArea: 60
+  _airDensity: 1.225
+  _liftScale: 1
+  _dragScale: 1
+  _parasiticDrag: 0.25
+  _forwardLinearDrag: 50
+  _forwardQuadraticDrag: 90
+  _lateralLinearDrag: 2000
+  _lateralQuadraticDrag: 4400
+  _rudderStrength: 650
+  _angularLinearDamping: 40000
+  _angularQuadraticDamping: 0
+  _timeStep: 0.008333334
