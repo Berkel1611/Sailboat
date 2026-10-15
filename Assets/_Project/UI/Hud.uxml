@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/Hud.uss?fileID=7433441132597879392&amp;guid=5512773e5b17fbe4c88d07cd2c51b8e7&amp;type=3#Hud"/>
+    <ui:VisualElement name="hud" picking-mode="Ignore" class="hud">
+        <ui:Label text="Sail opening: 0%" name="sail-opening-label" picking-mode="Ignore" class="hud__label"/>
+        <ui:Label text="Sail rotation: 0°" name="sail-rotation-label" picking-mode="Ignore" class="hud__label"/>
+    </ui:VisualElement>
+</ui:UXML>
