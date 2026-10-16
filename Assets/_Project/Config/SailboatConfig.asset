@@ -26,4 +26,3 @@ MonoBehaviour:
   _rudderStrength: 650
   _angularLinearDamping: 40000
   _angularQuadraticDamping: 0
-  _timeStep: 0.008333334

@@ -54,10 +54,6 @@ namespace Sailboat.Config
         [Tooltip("Quadratic yaw damping.")]
         [SerializeField, Min(0f)] private float _angularQuadraticDamping = 0f;
 
-        [Header("Simulation")]
-        [Tooltip("Fixed simulation step in seconds.")]
-        [SerializeField, Range(1f / 240f, 1f / 30f)] private float _timeStep = 1f / 120f;
-
         public float Mass => _mass;
 
         public float Inertia => _inertia;
@@ -85,7 +81,5 @@ namespace Sailboat.Config
         public float AngularLinearDamping => _angularLinearDamping;
 
         public float AngularQuadraticDamping => _angularQuadraticDamping;
-
-        public float TimeStep => _timeStep;
     }
 }
