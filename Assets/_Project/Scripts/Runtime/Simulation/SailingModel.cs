@@ -32,8 +32,8 @@ namespace Sailboat.Simulation
             Vector2 hullForce = ComputeHullForce(state);
 
             float forwardSpeed = state.ForwardSpeed;
-            float rudderTorque = _config.RudderStrength * controls.Rudder * forwardSpeed * Mathf.Abs(forwardSpeed);
-            float dampingTorque = -ComputeResistance(
+            float rudderTorque = controls.Rudder *
+                (_config.RudderStrength * forwardSpeed * Mathf.Abs(forwardSpeed) + _config.RudderLinearStrength * forwardSpeed); float dampingTorque = -ComputeResistance(
                 state.AngularVelocity,
                 _config.AngularLinearDamping,
                 _config.AngularQuadraticDamping);

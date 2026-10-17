@@ -16,13 +16,14 @@ MonoBehaviour:
   _inertia: 60000
   _sailArea: 60
   _airDensity: 1.225
-  _liftScale: 1
+  _liftScale: 1.3
   _dragScale: 1
   _parasiticDrag: 0.25
   _forwardLinearDrag: 50
   _forwardQuadraticDrag: 90
-  _lateralLinearDrag: 2000
-  _lateralQuadraticDrag: 4400
-  _rudderStrength: 650
+  _lateralLinearDrag: 10000
+  _lateralQuadraticDrag: 30000
+  _rudderStrength: 1200
+  _rudderLinearStrength: 2400
   _angularLinearDamping: 40000
   _angularQuadraticDamping: 0

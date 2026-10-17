@@ -23,7 +23,7 @@ namespace Sailboat.Config
         [SerializeField, Min(0f)] private float _airDensity = 1.225f;
 
         [Tooltip("Multiplier for the lift coefficient (sail shape / camber).")]
-        [SerializeField, Min(0f)] private float _liftScale = 1f;
+        [SerializeField, Min(0f)] private float _liftScale = 1.3f;
 
         [Tooltip("Multiplier for the drag coefficient.")]
         [SerializeField, Min(0f)] private float _dragScale = 1f;
@@ -39,14 +39,16 @@ namespace Sailboat.Config
         [SerializeField, Min(0f)] private float _forwardQuadraticDrag = 90f;
 
         [Tooltip("Linear drag across the hull (keel).")]
-        [SerializeField, Min(0f)] private float _lateralLinearDrag = 2000f;
+        [SerializeField, Min(0f)] private float _lateralLinearDrag = 10000f;
 
         [Tooltip("Quadratic drag across the hull (keel).")]
-        [SerializeField, Min(0f)] private float _lateralQuadraticDrag = 4400f;
+        [SerializeField, Min(0f)] private float _lateralQuadraticDrag = 30000f;
 
         [Header("Rudder")]
         [Tooltip("Rudder torque per squared forward speed.")]
-        [SerializeField, Min(0f)] private float _rudderStrength = 650f;
+        [SerializeField, Min(0f)] private float _rudderStrength = 1200f;
+        [Tooltip("Rudder torque per forward speed. Keeps the rudder effective at low speed.")]
+        [SerializeField, Min(0f)] private float _rudderLinearStrength = 2400f;
 
         [Tooltip("Linear yaw damping.")]
         [SerializeField, Min(0f)] private float _angularLinearDamping = 40000f;
@@ -77,6 +79,8 @@ namespace Sailboat.Config
         public float LateralQuadraticDrag => _lateralQuadraticDrag;
 
         public float RudderStrength => _rudderStrength;
+
+        public float RudderLinearStrength => _rudderLinearStrength;
 
         public float AngularLinearDamping => _angularLinearDamping;
 
