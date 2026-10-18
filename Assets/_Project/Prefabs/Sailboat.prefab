@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5717591613429567359}
   - component: {fileID: 3127587473187657054}
   - component: {fileID: 9198028565367590275}
+  - component: {fileID: 4026388207156057401}
   m_Layer: 0
   m_Name: Sailboat
   m_TagString: Untagged
@@ -96,7 +97,23 @@ MonoBehaviour:
   _rotationPivot: {fileID: 798186374327086504}
   _furlPivot: {fileID: 4933130410555674442}
   _gaff: {fileID: 6226886097516531891}
-  _gaffFurledEulerAngles: {x: -54.473, y: 0, z: 0}
+  _gaffFurledEulerAngles: {x: -54, y: 0, z: 0}
+--- !u!114 &4026388207156057401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058689052082626300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cde039bde69edf45beffd4e5f6d59c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Components.RudderVisual
+  _input: {fileID: 3224813326277470294}
+  _rudder: {fileID: 3904190531188350735}
+  _maxAngleDegrees: 30
+  _turnSpeed: 90
 --- !u!1 &2465302010780679322
 GameObject:
   m_ObjectHideFlags: 0
