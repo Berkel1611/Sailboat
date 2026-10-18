@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Environment
 {
     /// <summary>
     /// Drives a particle system that draws white streaks moving with the true wind.

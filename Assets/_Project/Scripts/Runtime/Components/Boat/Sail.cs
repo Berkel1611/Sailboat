@@ -2,7 +2,7 @@ using System;
 using Sailboat.Simulation;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Boat
 {
     /// <summary>
     /// Single source of truth for the sail setting. Converts the player's input into

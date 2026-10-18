@@ -1,6 +1,7 @@
+using Sailboat.Components.Boat;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.BoatVisuals
 {
     /// <summary>
     /// Turns the rudder blade according to the rudder input. Purely visual.

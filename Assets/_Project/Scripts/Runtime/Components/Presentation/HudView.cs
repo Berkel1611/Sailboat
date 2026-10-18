@@ -1,7 +1,8 @@
+using Sailboat.Components.Boat;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Presentation
 {
     /// <summary>
     /// Shows the sail opening and rotation in two UI Toolkit labels.

@@ -1,6 +1,7 @@
+using Sailboat.Components.Boat;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.BoatVisuals
 {
     /// <summary>
     /// Heels the boat model with the sideways sail force and adds gentle bobbing on the water. 

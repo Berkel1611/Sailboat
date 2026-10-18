@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Presentation
 {
     /// <summary>
     /// Follows the boat from behind.

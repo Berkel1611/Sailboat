@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Environment
 {
     /// <summary>
     /// Keeps the water plane under the boat, so the boat never sails off its edge.

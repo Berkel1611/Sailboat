@@ -1,7 +1,7 @@
 using Sailboat.Input;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Boat
 {
     /// <summary>
     /// Reads the player's input and exposes it as plain axis values in range -1..1.

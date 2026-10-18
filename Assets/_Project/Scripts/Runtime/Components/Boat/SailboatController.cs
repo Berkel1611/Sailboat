@@ -1,8 +1,9 @@
 using Sailboat.Config;
 using Sailboat.Simulation;
+using Sailboat.Components.Environment;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Boat
 {
     /// <summary>
     /// Connects the scene with the sailing model: collects the sail setting, the rudder input and the wind,

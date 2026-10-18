@@ -2,7 +2,7 @@ using Sailboat.Config;
 using Sailboat.Simulation;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.Environment
 {
     /// <summary>
     /// Provides the current true wind. Starts from the base values in <see cref="WindConfig"/>

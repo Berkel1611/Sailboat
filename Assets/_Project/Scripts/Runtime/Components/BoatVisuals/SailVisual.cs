@@ -1,6 +1,7 @@
+using Sailboat.Components.Boat;
 using UnityEngine;
 
-namespace Sailboat.Components
+namespace Sailboat.Components.BoatVisuals
 {
     /// <summary>
     /// Shows the sail state on the model: rotates the sail around the mast and furls it towards the boom
