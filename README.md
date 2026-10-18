@@ -6,6 +6,8 @@ sailing model.
 
 ![Sailboat](Docs/sailboat.gif)
 
+[Full gameplay video](https://youtu.be/jalRxGz_M0M)
+
 ## Features
  
 - **Custom sailing physics** — sail lift and drag from the apparent wind, keel and hull resistance,
