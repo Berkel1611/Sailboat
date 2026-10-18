@@ -37,6 +37,7 @@ sailing model.
 | Sail opening (hoist / lower) | W / S |
 | Sail rotation (±45°) | Q / E |
 | Rudder | A / D |
+| Quit | Esc |
 
 **How to sail:** keep the sail on the side away from the wind, at roughly half the angle between the bow and the wind. With the wind coming from starboard rotate the sail with E, from port with Q.
 Sailing closer than about 35° to the wind is not possible (the "no-go zone"), so reach an upwind target by zigzagging (tacking). The white streaks show the true wind.

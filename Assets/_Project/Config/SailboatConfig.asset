@@ -23,6 +23,7 @@ MonoBehaviour:
   _forwardQuadraticDrag: 60
   _lateralLinearDrag: 10000
   _lateralQuadraticDrag: 30000
+  _reverseDragMultiplier: 20
   _rudderStrength: 400
   _rudderLinearStrength: 3000
   _angularLinearDamping: 25000

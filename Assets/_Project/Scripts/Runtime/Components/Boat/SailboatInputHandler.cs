@@ -26,6 +26,11 @@ namespace Sailboat.Components.Boat
         /// </summary>
         public float RudderAxis => _actions.Sailboat.Rudder.ReadValue<float>();
 
+        /// <summary>
+        /// True only in the frame in which the quit input was pressed.
+        /// </summary>
+        public bool QuitPressed => _actions.Sailboat.Quit.WasPressedThisFrame();
+
         private void Awake()
         {
             _actions = new SailboatInputActions();

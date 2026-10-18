@@ -123,6 +123,16 @@ namespace Sailboat.Input
                     ""interactions"": """",
                     ""initialStateCheck"": true,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""1d619362-1b14-401e-8075-af6296dc8c6c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -224,6 +234,17 @@ namespace Sailboat.Input
                     ""action"": ""Rudder"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""014e128a-ef26-4714-b3dd-839a94f9cadd"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -235,6 +256,7 @@ namespace Sailboat.Input
             m_Sailboat_SailOpening = m_Sailboat.FindAction("SailOpening", throwIfNotFound: true);
             m_Sailboat_SailRotation = m_Sailboat.FindAction("SailRotation", throwIfNotFound: true);
             m_Sailboat_Rudder = m_Sailboat.FindAction("Rudder", throwIfNotFound: true);
+            m_Sailboat_Quit = m_Sailboat.FindAction("Quit", throwIfNotFound: true);
         }
 
         ~@SailboatInputActions()
@@ -318,6 +340,7 @@ namespace Sailboat.Input
         private readonly InputAction m_Sailboat_SailOpening;
         private readonly InputAction m_Sailboat_SailRotation;
         private readonly InputAction m_Sailboat_Rudder;
+        private readonly InputAction m_Sailboat_Quit;
         /// <summary>
         /// Provides access to input actions defined in input action map "Sailboat".
         /// </summary>
@@ -341,6 +364,10 @@ namespace Sailboat.Input
             /// Provides access to the underlying input action "Sailboat/Rudder".
             /// </summary>
             public InputAction @Rudder => m_Wrapper.m_Sailboat_Rudder;
+            /// <summary>
+            /// Provides access to the underlying input action "Sailboat/Quit".
+            /// </summary>
+            public InputAction @Quit => m_Wrapper.m_Sailboat_Quit;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -376,6 +403,9 @@ namespace Sailboat.Input
                 @Rudder.started += instance.OnRudder;
                 @Rudder.performed += instance.OnRudder;
                 @Rudder.canceled += instance.OnRudder;
+                @Quit.started += instance.OnQuit;
+                @Quit.performed += instance.OnQuit;
+                @Quit.canceled += instance.OnQuit;
             }
 
             /// <summary>
@@ -396,6 +426,9 @@ namespace Sailboat.Input
                 @Rudder.started -= instance.OnRudder;
                 @Rudder.performed -= instance.OnRudder;
                 @Rudder.canceled -= instance.OnRudder;
+                @Quit.started -= instance.OnQuit;
+                @Quit.performed -= instance.OnQuit;
+                @Quit.canceled -= instance.OnQuit;
             }
 
             /// <summary>
@@ -457,6 +490,13 @@ namespace Sailboat.Input
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnRudder(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "Quit" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnQuit(InputAction.CallbackContext context);
         }
     }
 }
