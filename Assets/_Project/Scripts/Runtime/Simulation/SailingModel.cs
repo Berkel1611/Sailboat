@@ -119,6 +119,12 @@ namespace Sailboat.Simulation
             float forwardResistance = ComputeResistance(state.ForwardSpeed, _config.ForwardLinearDrag, _config.ForwardQuadraticDrag);
             float lateralResistance = ComputeResistance(state.LateralSpeed, _config.LateralLinearDrag, _config.LateralQuadraticDrag);
 
+            // The hull, keel and rudder are shaped for forward motion, so moving stern first meets much more resistance.
+            if (state.ForwardSpeed < 0f)
+            {
+                forwardResistance *= _config.ReverseDragMultiplier;
+            }
+
             return -(state.Forward * forwardResistance + state.Right * lateralResistance);
         }
     }

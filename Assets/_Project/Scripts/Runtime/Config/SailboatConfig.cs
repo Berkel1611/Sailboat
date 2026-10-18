@@ -44,6 +44,9 @@ namespace Sailboat.Config
         [Tooltip("Quadratic drag across the hull (keel).")]
         [SerializeField, Min(0f)] private float _lateralQuadraticDrag = 30000f;
 
+        [Tooltip("Multiplier of the forward drag when the boat moves stern first.")]
+        [SerializeField, Min(1f)] private float _reverseDragMultiplier = 10f;
+
         [Header("Rudder")]
         [Tooltip("Rudder torque per squared forward speed.")]
         [SerializeField, Min(0f)] private float _rudderStrength = 1200f;
@@ -77,6 +80,8 @@ namespace Sailboat.Config
         public float LateralLinearDrag => _lateralLinearDrag;
 
         public float LateralQuadraticDrag => _lateralQuadraticDrag;
+
+        public float ReverseDragMultiplier => _reverseDragMultiplier;
 
         public float RudderStrength => _rudderStrength;
 

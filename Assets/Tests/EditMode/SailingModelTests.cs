@@ -119,6 +119,17 @@ namespace Sailboat.Tests.EditMode
             Assert.That(SignedHeadingDegrees(result), Is.LessThan(0f));
         }
 
+        [Test]
+        public void Step_MovingBackward_SlowsDownFasterThanMovingForward()
+        {
+            var sailClosed = new SailboatControls(0f, 0f, 0f);
+
+            SailboatState forward = Simulate(MovingForward(), sailClosed, Vector2.zero, 1f);
+            SailboatState backward = Simulate(MovingBackward(), sailClosed, Vector2.zero, 1f);
+
+            Assert.That(Mathf.Abs(backward.ForwardSpeed), Is.LessThan(Mathf.Abs(forward.ForwardSpeed)));
+        }
+
         private static SailboatState AtRest()
         {
             return new SailboatState(Vector2.zero, 0f, Vector2.zero, 0f);
@@ -127,6 +138,11 @@ namespace Sailboat.Tests.EditMode
         private static SailboatState MovingForward()
         {
             return new SailboatState(Vector2.zero, 0f, new Vector2(0f, 4f), 0f);
+        }
+
+        private static SailboatState MovingBackward()
+        {
+            return new SailboatState(Vector2.zero, 0f, new Vector2(0f, -4f), 0f);
         }
 
         private static SailboatControls FullSail(float sailAngleDegrees)
