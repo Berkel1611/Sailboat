@@ -716,11 +716,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &775533148 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6308283784101233717, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
-  m_PrefabInstance: {fileID: 1205954786}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,11 +765,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &894845522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2058689052082626300, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
-  m_PrefabInstance: {fileID: 1205954786}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1067563671
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +886,10 @@ PrefabInstance:
       propertyPath: _wind
       value: 
       objectReference: {fileID: 620878780}
+    - target: {fileID: 5717591613429567359, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
+      propertyPath: _openingSpeed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6360074784189713329, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -940,24 +934,17 @@ PrefabInstance:
       propertyPath: _wind
       value: 
       objectReference: {fileID: 620878780}
-    - target: {fileID: 9198028565367590275, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
-      propertyPath: _gaffFurledEulerAngles.x
-      value: -54
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2058689052082626300, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1205954800}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
 --- !u!114 &1205954793 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5717591613429567359, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
   m_PrefabInstance: {fileID: 1205954786}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894845522}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9873fa219e764894889b84304cfd84f8, type: 3}
@@ -968,37 +955,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6360074784189713329, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
   m_PrefabInstance: {fileID: 1205954786}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1205954798 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3127587473187657054, guid: 184920d4a6cc1d240a67181c45679dcc, type: 3}
-  m_PrefabInstance: {fileID: 1205954786}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894845522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26a3eafa93e150a47b6cf7844f20c9e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Components.SailboatController
---- !u!114 &1205954800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894845522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66c07d3881d37b648b24798ba8db5392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Components.HullMotionVisual
-  _controller: {fileID: 1205954798}
-  _visual: {fileID: 775533148}
-  _heelPerKilonewton: 2
-  _maxHeelDegrees: 20
-  _heelSmoothTime: 0.6
-  _bobAmplitude: 0.15
-  _bobPeriod: 3.5
-  _rockAmplitudeDegrees: 1.5
 --- !u!1 &1631471186
 GameObject:
   m_ObjectHideFlags: 0

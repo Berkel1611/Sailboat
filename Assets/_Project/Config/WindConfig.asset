@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WindConfig
   m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Config.WindConfig
   _fromDirectionDegrees: 225
-  _speed: 10
+  _speed: 13
   _directionVariationDegrees: 20
   _speedVariation: 0.2
   _variationFrequency: 0.03

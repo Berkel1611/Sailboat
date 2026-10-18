@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3127587473187657054}
   - component: {fileID: 9198028565367590275}
   - component: {fileID: 4026388207156057401}
+  - component: {fileID: 344649860472362390}
   m_Layer: 0
   m_Name: Sailboat
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Components.Sail
   _input: {fileID: 3224813326277470294}
-  _openingSpeed: 40
+  _openingSpeed: 60
   _rotationSpeed: 30
 --- !u!114 &3127587473187657054
 MonoBehaviour:
@@ -114,6 +115,26 @@ MonoBehaviour:
   _rudder: {fileID: 3904190531188350735}
   _maxAngleDegrees: 30
   _turnSpeed: 90
+--- !u!114 &344649860472362390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058689052082626300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c07d3881d37b648b24798ba8db5392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Sailboat.Runtime::Sailboat.Components.HullMotionVisual
+  _controller: {fileID: 3127587473187657054}
+  _visual: {fileID: 6308283784101233717}
+  _heelPerKilonewton: 1
+  _maxHeelDegrees: 20
+  _heelSmoothTime: 0.6
+  _bobAmplitude: 0.15
+  _bobPeriod: 3.5
+  _rockAmplitudeDegrees: 1.5
 --- !u!1 &2465302010780679322
 GameObject:
   m_ObjectHideFlags: 0
